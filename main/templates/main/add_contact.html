@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block contentTitle %}
+    Patient Registration
+{% endblock contentTitle %}
+
+{% block content %}
+
+     <form action="" method="post">
+    {% csrf_token %}
+        
+        <div class="container">
+            <div class="patient-form ">
+                <div class="row">
+                  
+                    <div class="form-field col-md-6">
+                        <input type="text" id="phone_number" class="input-text" type="text" name="phone_number" placeholder="Phone no.">
+                    </div>
+
+                    <div class="form-field col-md-6">
+                        <input type="Email" id="email_id" class="input-text" type="text" name="email_id" placeholder="Email id">
+
+                   
+
+
+                </div>
+				     <div class="form-field col-md-6">
+                          <select class="input-text"  name="p_id" id="p_id">
+                        {% for doctor in doctors %}
+                            <option class="" value="{{doctor}}">{{doctor}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+            </div>
+         
+
+            </div>
+  
+        <button class="btn col-lg-4 btn-block mx-auto btn-info mb-4" >Submit</a></div>
+    </form>
+{% endblock content %}

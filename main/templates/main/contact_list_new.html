@@ -1,0 +1,46 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+
+{% block contentTitle %}
+    CONTACTS List
+
+
+{% endblock contentTitle %}
+
+{% block content %}
+
+
+
+    <!-- Topbar Search -->
+
+
+   <div class="row">
+             	{% for getdetails1 in get_details %}
+              <div class="col-6">
+                    <div class="card product-card" >
+                        <div class="card-body" style="line-height: auto;">
+                            <h2 class="price">Patient name:{{cont_name}}</h2>
+							 <p class="text" style="font-size: 16px;">Email id:{{ getdetails1.email_id }}</p>
+                         
+							 <p class="text" style="font-size: 16px;">Contactno:{{getdetails1.phone_number}}</p>
+                         
+							 <center>
+     	<a href="update/{{getdetails1.id}}" class="btn btn-warning" id = '{{getdetails1.id}}'>Edit</a>
+		<a href="delete/{{getdetails1.id}}" class="btn btn-danger" id = '{{getdetails1.id}}'>Delete</a>
+       
+		
+	</center>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+             {% endfor %}
+            </div>
+           
+
+
+{% endblock content %}
+

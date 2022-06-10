@@ -1,0 +1,36 @@
+{% extends 'main/index_base.html' %}
+{% load static %}
+
+{% block contentTitle %}
+    Covid App
+{% endblock contentTitle %}
+
+{% block content %}
+    <div class="container-fluid">
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Recover Card -->
+            <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="section full mt-2">
+            <div class="section-title">Home Page</div>
+            <div class="wide-block pt-2 pb-2">
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <a href="{% url 'dashboard' %}" class="btn btn-primary rounded me-1">Dashboard</a><hr>
+                
+			   <a href="{% url 'user_signup' %}" class="btn btn-primary me-1">User Register</a><hr>
+                <a href="{% url 'user_login' %}" class="btn btn-primary rounded me-1">User Login</a><hr>
+                 
+            </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- admitted card -->
+           
+        </div>
+    </div>
+
+{% endblock content %}

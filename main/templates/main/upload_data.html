@@ -1,0 +1,56 @@
+{% extends 'main/user_base.html' %}
+{% load static %}
+
+{% block contentTitle %}
+    Book Appointment
+{% endblock contentTitle %}
+
+{% block content %}
+
+        <form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+ 
+
+ 
+
+
+            <div class="wide-block p-0">
+
+                <div class="table-responsive">
+                    <table class="table">
+                    
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                
+                                {{ upload_form.label_tag }}
+                                
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                  <td>
+       
+          {{ upload_form}}
+		
+       
+        </td>
+                               
+                            </tr>
+                           
+                        </tbody>
+                        
+
+                    </table>
+                          <button class="btn col-lg-4 btn-block mx-auto btn-info mb-4" >Submit</button>
+   
+                </div>
+
+            </div>
+        </div>
+ 
+</form>
+{% endblock content %}

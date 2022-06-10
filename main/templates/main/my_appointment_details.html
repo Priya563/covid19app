@@ -1,0 +1,52 @@
+{% extends 'main/user_base.html' %}
+{% load static %}
+
+
+
+{% block contentTitle %}
+   My Appointment Details
+
+{% endblock contentTitle %}
+
+{% block content %}
+
+
+
+    <!-- Topbar Search -->
+
+
+ <div class="row">
+             	{% for getdetails1 in getdetails %}
+              <div class="col-6">
+                    <div class="card product-card" >
+                        <div class="card-body" style="line-height: auto;">
+                            <h2 class="price">Patient name:{{ getdetails1.Patientname }}</h2>
+							 <p class="text" style="font-size: 16px;">Contactno:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; {{getdetails1.Contactno}}</p>
+                             
+                            <p class="text"style="font-size: 16px;" >Type:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{getdetails1.Type}}</p>
+                          
+                             
+                                 <p class="text" style="font-size: 16px;">Appointment date:&nbsp;{{getdetails1.Appointmentdate}}</p>
+                              <p class="text" style="font-size: 16px;">Time:&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;{{getdetails1.Time}}</p>
+                            
+ <p class="text" style="font-size: 16px;">Aadharno:
+ &nbsp;&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;{{getdetails1.Aadharno}}</p>
+                      <p class="text" style="font-size: 16px;">Notes:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; <b style="color:red">{{getdetails1.notes}}</b></p>
+                                                          
+							<div class="text" style="font-size: 16px;">Status:&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <b style="color:red">{{getdetails1.status}}</b></div>
+                         
+							 <center>
+     
+		
+	</center>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+             {% endfor %}
+            </div>
+
+
+{% endblock content %}
+

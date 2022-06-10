@@ -1,0 +1,139 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+
+{% block contentTitle %}
+    CONTACTS List
+
+
+{% endblock contentTitle %}
+
+{% block content %}
+
+
+
+    <!-- Topbar Search -->
+
+
+     <div class="table-responsive mt-3">
+        <table class="table table-hover">
+            <thead>
+                <th><h3>S.No</h3></th>
+                <th><h3>Patient Name</h3></th>
+                <th><h3>Contact 1</h3></th>
+                <th><h3>Contact 2</h3></th>
+                <th><h3>Contact 3</h3></th>
+                <th><h3>Contact 4</h3></th>
+                <th><h3>Contact 5</h3></th>
+                </thead>
+
+            <tbody>
+
+
+                <tr class="mx-auto">
+                    <td><input type="number">
+                        <script>
+                    var addSerialNumber = function () {
+                    $('table tr').each(function(index) {
+                    $(this).find('td:nth-child(1)').html(index+0);
+                    });
+                    };
+                    addSerialNumber();</script></td>
+                    <td><h4>Andrew</h4></td>
+                     <td><h4>Lavanya</h4></td>
+        <td><h4>Jyothsna</h4></td>
+        <td><h4>Abinaya</h4></td>
+        <td><h4>Kani</h4></td>
+        <td><h4>Kowshik</h4></td>
+             <tr>
+                 <td><input type="number">
+                        <script>
+                    var addSerialNumber = function () {
+                    $('table tr').each(function(index) {
+                    $(this).find('td:nth-child(1)').html(index+0);
+                    });
+                    };
+                    addSerialNumber();</script></td>
+                <td><h4>Lilly</h4></td>
+                <td><h4>Srivardini</h4></td>
+    <td><h4>Arun</h4></td>
+    <td><h4>Alex</h4></td>
+    <td><h4>Sasha</h4></td>
+    <td><h4>Albert</h4></td>
+            <tr>
+                <td><input type="number">
+                        <script>
+                    var addSerialNumber = function () {
+                    $('table tr').each(function(index) {
+                    $(this).find('td:nth-child(1)').html(index+0);
+                    });
+                    };
+                    addSerialNumber();</script></td>
+                <td><h4>Victor</h4></td>
+                <td><h4>Aparna</h4></td>
+    <td><h4>Jennie</h4></td>
+    <td><h4>Lilly</h4></td>
+    <td><h4>Sameena</h4></td>
+    <td><h4>Maria</h4></td>
+             </tr>
+            <tr>
+               <td><input type="number">
+                        <script>
+                    var addSerialNumber = function () {
+                    $('table tr').each(function(index) {
+                    $(this).find('td:nth-child(1)').html(index+0);
+                    });
+                    };
+                    addSerialNumber();</script></td>
+                <td><h4>Jones</h4></td>
+                <td><h4>Akshaya</h4></td>
+    <td><h4>Malar</h4></td>
+    <td><h4>Raju</h4></td>
+    <td><h4>Sathish</h4></td>
+    <td><h4>Tarun</h4></td>
+             </tr>
+            <tr>
+               <tr>
+               <td><input type="number">
+                        <script>
+                    var addSerialNumber = function () {
+                    $('table tr').each(function(index) {
+                    $(this).find('td:nth-child(1)').html(index+0);
+                    });
+                    };
+                    addSerialNumber();</script></td>
+                <td><h4>Ginny</h4></td>
+                    <td><h4>Anjali</h4></td>
+    <td><h4>Roja</h4></td>
+    <td><h4>Jeju</h4></td>
+    <td><h4>Bhuvi</h4></td>
+    <td><h4>Shreeja</h4></td>
+             </tr>
+            <tr>
+                <td><input type="number">
+                        <script>
+                    var addSerialNumber = function () {
+                    $('table tr').each(function(index) {
+                    $(this).find('td:nth-child(1)').html(index+0);
+                    });
+                    };
+                    addSerialNumber();</script></td>
+                <td><h4>Sara</h4></td>
+                  <td><h4>Apoorva</h4></td>
+    <td><h4>Ranjitha</h4></td>
+    <td><h4>Sameer</h4></td>
+    <td><h4>Ramesh</h4></td>
+    <td><h4>Shivani</h4></td>
+             </tr>
+
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+{% endblock content %}
+
